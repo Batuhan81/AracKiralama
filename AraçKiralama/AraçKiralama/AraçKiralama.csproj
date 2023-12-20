@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7998AE59-46A0-4BAB-AB69-C7FBB98598C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AraçKiralama</RootNamespace>
+    <AssemblyName>AraçKiralama</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.20.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.20.0\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Araç_Kiralama.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAraçKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAraçKayıt.Designer.cs">
+      <DependentUpon>FrmAraçKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAraçLİsteleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAraçLİsteleme.Designer.cs">
+      <DependentUpon>FrmAraçLİsteleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMMüşteri ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMüşteri ekle.Designer.cs">
+      <DependentUpon>FRMMüşteri ekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMüşteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMüşteriListele.Designer.cs">
+      <DependentUpon>FrmMüşteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSatış.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSatış.Designer.cs">
+      <DependentUpon>FrmSatış.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMSözleşme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMSözleşme.Designer.cs">
+      <DependentUpon>FRMSözleşme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAraçKayıt.resx">
+      <DependentUpon>FrmAraçKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAraçLİsteleme.resx">
+      <DependentUpon>FrmAraçLİsteleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMüşteri ekle.resx">
+      <DependentUpon>FRMMüşteri ekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMüşteriListele.resx">
+      <DependentUpon>FrmMüşteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSatış.resx">
+      <DependentUpon>FrmSatış.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMSözleşme.resx">
+      <DependentUpon>FRMSözleşme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\araçkiralama" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Araç Kayıt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Araç Ekle Tuşu.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\İptal Tuşu.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arka Plan Araba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Müşteri Ekle4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arka Plan Araba1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arka Plan Araba2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arka Plan Araba3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arka Plan Araba4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arka Plan Araba5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arka Plan Araba6.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
